@@ -14,7 +14,7 @@
 	<tr>
 		<td>{{stod["company"]}}</td>
 		<td>{{stod["name"]}}</td>
-		<td><a href="/stod/{{stod["key"]}}">Nánar</a></td>
+		<td><a href="/stod/{{stod['key']}}">Nánar</a></td>
 	</tr>
 	%end
 	<tr>
