@@ -76,5 +76,5 @@ def villa404(error):
 def villa500(error):
     return template('v6/villa',villa="Villa 500",date=date,odyrastaB=odyrastaB,odyrastaD=odyrastaD)
 
-#run(host="0.0.0.0", port=os.environ.get('PORT'))
-run(host='localhost', port=80, debug=True, reloader=True)
+run(host="0.0.0.0", port=os.environ.get('PORT'))
+#run(host='localhost', port=80, debug=True, reloader=True)
