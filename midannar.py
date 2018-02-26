@@ -1,4 +1,5 @@
 from bottle import *
+from operator import itemgetter
 import os, json, urllib.request, datetime
 
 with urllib.request.urlopen("http://apis.is/petrol") as f:
@@ -55,6 +56,7 @@ def stod(stadsetning):
             stod = x
             stodFannst = True
             break
+    stodvar.sort(key=itemgetter('name'))
     if stodFannst == True:
         return template('v6/stod',date=date,stod=stod,odyrastaB=odyrastaB,odyrastaD=odyrastaD)
     else:
