@@ -1,4 +1,4 @@
-%include("./v6/header",stada="Stöðvar")
+%include("./v6/header",stada="Stöð")
 <div class="kort">
 	<iframe 
 		width="100%"
