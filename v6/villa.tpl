@@ -1,4 +1,4 @@
-%include("./v6/header",stada="Heim")
+%include("./v6/header",stada="Villa")
 <div class="villa">
 	<h1>{{villa}}</h1>
 	<div class="tilbaka">
