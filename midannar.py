@@ -42,6 +42,7 @@ def fyrirt(stadsetning):
         if x["company"].lower() == stadsetning.lower():
             stodvar.append(x)
             fannst = True
+    stodvar.sort(key=itemgetter('name'))
     if fannst == True:
         return template('v6/fyrirtaeki',date=date,stodvar=stodvar,odyrastaB=odyrastaB,odyrastaD=odyrastaD)
     else:
@@ -56,7 +57,6 @@ def stod(stadsetning):
             stod = x
             stodFannst = True
             break
-    stodvar.sort(key=itemgetter('name'))
     if stodFannst == True:
         return template('v6/stod',date=date,stod=stod,odyrastaB=odyrastaB,odyrastaD=odyrastaD)
     else:
